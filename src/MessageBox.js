@@ -16,6 +16,7 @@ var MessageBox = React.createClass({
         this.setState({
             messages : newMessages
         });
+        this.refs.newMessage.value='';
     },
     componentDidMount: function() {
         $.get('https://gurureactsampleapp.firebaseio.com/'+ this.props.url + '/.json').then(function(data){
@@ -64,11 +65,13 @@ var MessageBox = React.createClass({
                     <button className="btn btn-primary" onClick={this.handleAdd}>Add</button>
                     {messages}
                 </div>
+                {/*
                 <div className="ApiData">
                     <h2>Playing around with api data </h2>
                     {this.state.lastRoute}
                     {this.state.metric}
                 </div>
+                */}
             </section>
         );
     }
