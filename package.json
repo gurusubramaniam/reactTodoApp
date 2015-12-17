@@ -1,0 +1,28 @@
+{
+  "name": "reacttodo",
+  "version": "1.0.0",
+  "description": "small todo app with react",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browserify -t reactify src/app.js > build/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gurusubramaniam/reactTodoApp.git"
+  },
+  "keywords": [
+    "todo",
+    "react"
+  ],
+  "author": "gurusubramaniam sundararaman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gurusubramaniam/reactTodoApp/issues"
+  },
+  "homepage": "https://github.com/gurusubramaniam/reactTodoApp#readme",
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "react-tools": "^0.13.3"
+  }
+}
